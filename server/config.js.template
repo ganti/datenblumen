@@ -1,0 +1,11 @@
+module.exports = {
+	port: 8089,
+	headers: {
+		'Access-Control-Allow-Origin': '*'
+	},
+	cacheFolder: './cache/',
+	screenshotFolder: '../web/assets/screenshots/',
+	minAge:    15*60*1000, // retry broken websites after
+	maxAge: 12*60*60*1000, // retry successful websites after
+	offline: true
+}

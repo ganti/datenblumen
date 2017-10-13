@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<script type="text/javascript" src="config.js"></script>
+
+	<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/draw.js"></script>
+	<script type="text/javascript" src="assets/js/bubbles.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-theme.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="input-group">
+			<input id="texturl" type="text" class="form-control" value="spiegel.de">
+			<span class="input-group-btn">
+				<button id="btnsubmit" type="button" class="btn btn-default">Zeigen</button>
+			</span>
+		</div>
+		<div id="content">
+			<h2 id="title"></h2>
+			<div id="result">
+				<div id="wrapper" style="position:relative;height:512px">
+					<div id="bubbles" style="position:absolute;left:0;right:150px;height:100%"></div>
+					<div id="screenshot" style="position:absolute;right:0;width:128px;height:100%"></div>
+				</div>
+				<div id="download" style="text-align:right">
+					<button id="btnDownload" type="button" class="btn btn-default btn-xs" disabled="disabled">
+						<span class="glyphicon glyphicon-save" aria-hidden="true"></span> Download
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<form id="downloadform" method="post" action="download.pl" style="display:none">
+		<input type="hidden" id="data" name="data" value="">
+	</form>
+</body>
+</html>

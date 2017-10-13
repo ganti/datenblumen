@@ -1,0 +1,23 @@
+
+#title {
+	text-align: center;
+}
+
+.popover {
+	word-wrap: break-word;
+	font-size: 12px;
+	line-height: 1.2em;
+}
+
+.popover p {
+	margin: 3px 0;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.clickable:focus {
+    outline: none;
+}
+

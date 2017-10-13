@@ -1,0 +1,4 @@
+var config = {
+	flowershop: 'http://localhost:8089',
+	waitBetweenRequest: 500
+}
